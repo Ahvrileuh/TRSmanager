@@ -56,4 +56,15 @@ clientDiscord.login(process.env.TOKEN);
 			guildMember.addRole(role);
 			message.channel.send("role **C++** added !");
 		}
+		
+		if(message.content === prefix + "add news" && message.channel.name == 'roles-manager'){
+			role = message.guild.roles.find('name', 'news');
+			guildMember.addRole(role);
+			message.channel.send("role **NEWS** added !");
+		}
+		
+		if(message.content === prefix + "remove role" && message.channel.name == 'roles-manager'){
+			guildMember.removeRoles;
+			message.channel.send("role removed !");
+		}
   });
