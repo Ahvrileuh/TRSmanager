@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
-var prefix = '!';
-var role = '';
+var prefix = "";
+var role = "";
 
 clientDiscord.on('ready', ()=> {
 	clientDiscord.user.setPresence({ game: { name: '!cmd', type: 0}});
