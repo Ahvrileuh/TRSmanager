@@ -20,4 +20,22 @@ clientDiscord.login(process.env.TOKEN);
 			guildMember.addRole(role);
 			message.channel.send("role **UNITY** added !");
 		}
+		
+		if(message.content === prefix + "add ur4" && message.channel.name == 'roles-manager'){
+			role = message.guild.roles.find('name', 'UR4');
+			guildMember.addRole(role);
+			message.channel.send("role **UR4** added !");
+		}
+		
+		if(message.content === prefix + "add c" && message.channel.name == 'roles-manager'){
+			role = message.guild.roles.find('name', 'C');
+			guildMember.addRole(role);
+			message.channel.send("role **C** added !");
+		}
+		
+		if(message.content === prefix + "add c#" && message.channel.name == 'roles-manager'){
+			role = message.guild.roles.find('name', 'C#');
+			guildMember.addRole(role);
+			message.channel.send("role **C#** added !");
+		}
   });
