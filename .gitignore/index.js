@@ -5,7 +5,7 @@ var prefix = "!";
 var role = "";
 
 clientDiscord.on('ready', ()=> {
-    clientDiscord.user.setPresence({ game: { name: '!cmd', type: 0}});
+    clientDiscord.user.setPresence({ game: { name: '=> roles-manager', type: 0}});
     console.log("JOSSE is ready");
 });
 
