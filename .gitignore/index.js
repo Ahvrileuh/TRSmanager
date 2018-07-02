@@ -64,7 +64,22 @@ clientDiscord.login(process.env.TOKEN);
 		}
 		
 		if(message.content === prefix + "remove role" && message.channel.name == 'roles-manager'){
-			guildMember.removeRoles;
+			role = message.guild.roles.find('name', 'UNITY');
+			guildMember.removeRole(role);
+			role = message.guild.roles.find('name', 'UR4');
+			guildMember.removeRole(role);
+			role = message.guild.roles.find('name', 'C');
+			guildMember.removeRole(role);
+			role = message.guild.roles.find('name', 'C#');
+			guildMember.removeRole(role);
+			role = message.guild.roles.find('name', 'C++');
+			guildMember.removeRole(role);
+			role = message.guild.roles.find('name', 'JavaScript');
+			guildMember.removeRole(role);
+			role = message.guild.roles.find('name', 'just a cake...');
+			guildMember.removeRole(role);
+			role = message.guild.roles.find('name', 'news');
+			guildMember.removeRole(role);
 			message.channel.send("role removed !");
 		}
   });
