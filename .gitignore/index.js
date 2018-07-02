@@ -38,4 +38,22 @@ clientDiscord.login(process.env.TOKEN);
 			guildMember.addRole(role);
 			message.channel.send("role **C#** added !");
 		}
+		
+		if(message.content === prefix + "add js" && message.channel.name == 'roles-manager'){
+			role = message.guild.roles.find('name', 'JavaScript');
+			guildMember.addRole(role);
+			message.channel.send("role **JAVASCRIPT** added !");
+		}
+		
+		if(message.content === prefix + "add cake" && message.channel.name == 'roles-manager'){
+			role = message.guild.roles.find('name', 'just a cake...');
+			guildMember.addRole(role);
+			message.channel.send("role **cake** added !");
+		}
+		
+		if(message.content === prefix + "add c++" && message.channel.name == 'roles-manager'){
+			role = message.guild.roles.find('name', 'C++');
+			guildMember.addRole(role);
+			message.channel.send("role **C++** added !");
+		}
   });
