@@ -88,5 +88,4 @@ clientDiscord.login(process.env.TOKEN);
 		
 		role = member.guild.roles.find('name','LittleForm');
 		member.addRole(role);
-		member.createDM.send("**Welcome to the TRSgameserver !** you can ask all your questions and I can (Thibaud.S) send you any drawing or C# code of my games ! just ask me ^^")
 	});
