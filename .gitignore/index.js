@@ -83,3 +83,10 @@ clientDiscord.login(process.env.TOKEN);
 			message.channel.send("role removed !");
 		}
   });
+
+	clientDiscord.on('guildMemberAdd', member => {
+		
+		role = member.guild.roles.find('name','LittleForm');
+		member.addRole(role);
+		
+	});
