@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
-var prefix = "/";
+var prefix = "!";
 var role = "";
 
 clientDiscord.on('ready', ()=> {
