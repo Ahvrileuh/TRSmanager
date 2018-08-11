@@ -3,6 +3,7 @@ const clientDiscord = new Discord.Client();
 
 var prefix = "!";
 var role = "";
+var Dice = 0;
 
 clientDiscord.on('ready', ()=> {
     clientDiscord.user.setPresence({ game: { name: '> roles-manager', type: 0}});
@@ -82,10 +83,30 @@ clientDiscord.login(process.env.TOKEN);
 			guildMember.removeRole(role);
 			message.channel.send("role removed !");
 		}
+		
+		if(message.content === prefix + "tips" && message.channel.name == 'bot-cmd'){
+			random();
+			if(Dice == 1){
+			message.channel.send("TEST1");
+			}
+			if(Dice == 2){
+			message.channel.send("TEST2");
+			}
+			if(Dice == 3){
+			message.channel.send("TEST3");
+			}
+		}
   });
 
-  	clientDiscord.on('guildMemberAdd', member => {
+  clientDiscord.on('guildMemberAdd', member => {
 		
 		role = member.guild.roles.find('name','LittleForm');
 		member.addRole(role);
-	});
+  });
+
+function random(min, max){
+	min = Math.ceil(1);
+	max = Math.floor(3);
+	Dice = Math.floor(Math.random() * (max - min + 1) + min);
+	console.log("dice(6) try !");
+}
