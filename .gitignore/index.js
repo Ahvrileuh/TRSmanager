@@ -84,16 +84,16 @@ clientDiscord.login(process.env.TOKEN);
 			message.channel.send("role removed !");
 		}
 		
-		if(message.content === prefix + "tips" && message.channel.name == 'bot-cmd'){
+		if(message.content === prefix + "soul" && message.channel.name == 'bot-cmd'){
 			random();
-			if(Dice == 1){
-			message.channel.send("TEST1");
+			if(Dice <= 15){
+			message.channel.send("You get a **legendary** soul !");
 			}
-			if(Dice == 2){
-			message.channel.send("TEST2");
+			if(Dice >= 15 && Dice <= 20){
+			message.channel.send("You get a **super-legendary** soul !");
 			}
-			if(Dice == 3){
-			message.channel.send("TEST3");
+			if(Dice > 20){
+			message.channel.send("You get a **normal** soul !");
 			}
 		}
   });
@@ -106,7 +106,7 @@ clientDiscord.login(process.env.TOKEN);
 
 function random(min, max){
 	min = Math.ceil(1);
-	max = Math.floor(3);
+	max = Math.floor(100);
 	Dice = Math.floor(Math.random() * (max - min + 1) + min);
 	console.log("dice(6) try !");
 }
