@@ -5,7 +5,7 @@ var prefix = "!";
 var run = "run ";
 var role = "";
 var Dice = 0;
-var exeName = "";
+var exeName = " ";
 
 clientDiscord.on('ready', ()=> {
     clientDiscord.user.setPresence({ game: { name: '> roles-manager', type: 0}});
