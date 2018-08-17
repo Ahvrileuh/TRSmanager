@@ -101,15 +101,8 @@ clientDiscord.login(process.env.TOKEN);
 		if(exeName == "Avril#8268" || "romain_flcht#1259"){
 		if(message.content === prefix + run + "cplSpammer" && message.channel.name == 'bot-cmd'){
 			
-			random();
-			message.channel.send("app **cplSpammer** run !");
-			message.channel.send("executor : **" + exeName +"**");
-			if(Dice <= 10){
-				message.channel.send("TEST10");
-			}
-			if(Dice > 10){
-				message.channel.send("TEST90");
-			}
+			message.channel.send("app **cplSpammer** run ! executor : **" + exeName +"**");
+			message.channel.send(" ``` *** CPL SPAMMER *** ``` " + "``` TEST ```")
 		}
 	}else{message.channel.send("***unauthorized order ;)***");}
   });
