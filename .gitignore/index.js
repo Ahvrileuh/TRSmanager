@@ -101,7 +101,7 @@ clientDiscord.login(process.env.TOKEN);
 		
 		if(message.content === prefix + run + "cplSpammer" && message.channel.name == 'bot-cmd'){
 			
-			exeName = message.author.name;
+			exeName = message.author.tag;
 			random();
 			message.channel.send("app **cplSpammer** run !");
 			message.channel.send("executor : **" + exeName +"**");
