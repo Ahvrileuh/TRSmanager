@@ -15,7 +15,7 @@ clientDiscord.on('ready', ()=> {
 clientDiscord.login(process.env.TOKEN);
 
 	clientDiscord.on('message', message => {
-  	
+  		exeName = message.author.tag;
 		const guildMember = message.member;
     		
   		if(message.content === prefix + "add unity" && message.channel.name == 'roles-manager'){
@@ -98,10 +98,9 @@ clientDiscord.login(process.env.TOKEN);
 			message.channel.send("You get a **normal** soul !");
 			}
 		}
-		
+		if(exeName == "Avril#8268" || "romain_flcht#1259"){
 		if(message.content === prefix + run + "cplSpammer" && message.channel.name == 'bot-cmd'){
 			
-			exeName = message.author.tag;
 			random();
 			message.channel.send("app **cplSpammer** run !");
 			message.channel.send("executor : **" + exeName +"**");
@@ -112,6 +111,7 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("TEST90");
 			}
 		}
+	}else{message.channel.send("***unauthorized order ;)***");}
   });
 
   clientDiscord.on('guildMemberAdd', member => {
