@@ -2,8 +2,10 @@ const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
 var prefix = "!";
+var run = "run ";
 var role = "";
 var Dice = 0;
+var exeName = "";
 
 clientDiscord.on('ready', ()=> {
     clientDiscord.user.setPresence({ game: { name: '> roles-manager', type: 0}});
@@ -94,6 +96,20 @@ clientDiscord.login(process.env.TOKEN);
 			}
 			if(Dice > 20){
 			message.channel.send("You get a **normal** soul !");
+			}
+		}
+		
+		if(message.content === prefix + run + "cplSpammer" && message.channel.name == 'bot-cmd'){
+			
+			exeName = message.author.name;
+			random();
+			message.channel.send("app **cplSpammer** run !");
+			message.channel.send("executor : **" + exeName +"**");
+			if(Dice <= 10){
+				message.channel.send("TEST10");
+			}
+			if(Dice > 10){
+				message.channel.send("TEST90");
 			}
 		}
   });
