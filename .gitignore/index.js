@@ -98,7 +98,7 @@ clientDiscord.login(process.env.TOKEN);
 			message.channel.send("You get a **normal** soul !");
 			}
 		}
-		if(exeName == "Avril#8268" || "romain_flcht#1259"){
+		if(exeName == "Avril#8268"){
 		if(message.content === prefix + run + "cplSpammer" && message.channel.name == 'bot-cmd'){
 			
 			message.channel.send("app **cplSpammer** run ! executor : **" + exeName +"**");
