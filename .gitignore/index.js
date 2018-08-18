@@ -7,7 +7,7 @@ var role = "";
 var Dice = 0;
 var exeName = " ";
 
-var part01 = " ";
+var part01 = "test";
 var part02 = " ";
 var part03 = " ";
 
@@ -112,6 +112,7 @@ clientDiscord.login(process.env.TOKEN);
 		if(message.content === prefix + run + "cplSpammer" && message.channel.name == 'bot-cmd'){
 			randomSpammer();
 			message.channel.send("app **cplSpammer** run ! executor : **" + exeName +"**");
+			part01 == part01DB.baba
 			if(randomSpammer == 1){ part01 == part01DB.baba}
 			if(randomSpammer == 2){ part01 == part01DB.obama}
 			if(randomSpammer == 3){ part01 == part01DB.jcvd}
