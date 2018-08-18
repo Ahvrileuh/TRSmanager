@@ -7,9 +7,20 @@ var role = "";
 var Dice = 0;
 var exeName = " ";
 
+var part01 = " ";
+var part02 = " ";
+var part03 = " ";
+
+var part01DB = {};
+part01DB.baba = "Cyril Hanouna";
+part01DB.obama = "Barack Obama";
+part01DB.jcvd = "Jean Claude Van Damme";
+var part02DB = {};
+var part03DB = {};
+
 clientDiscord.on('ready', ()=> {
     clientDiscord.user.setPresence({ game: { name: '> roles-manager', type: 0}});
-    console.log("JOSSE is ready");
+    //console.log("JOSSE is ready");
 });
 
 clientDiscord.login(process.env.TOKEN);
@@ -98,13 +109,15 @@ clientDiscord.login(process.env.TOKEN);
 			message.channel.send("You get a **normal** soul !");
 			}
 		}
-		if(exeName == "Avril#8268"){
 		if(message.content === prefix + run + "cplSpammer" && message.channel.name == 'bot-cmd'){
-			
+			randomSpammer();
 			message.channel.send("app **cplSpammer** run ! executor : **" + exeName +"**");
-			message.channel.send(" ``` *** CPL SPAMMER *** ``` " + "``` TEST ```")
+			if(randomSpammer == 1){ part01 == part01DB.baba}
+			if(randomSpammer == 2){ part01 == part01DB.obama}
+			if(randomSpammer == 3){ part01 == part01DB.jcvd}
+			message.channel.send(" ```> *** CPL SPAMMER *** ``` " + "```> " + part01 + part02 + part03 + "```")
 		}
-	}else{message.channel.send("***unauthorized order ;)***");}
+	
   });
 
   clientDiscord.on('guildMemberAdd', member => {
@@ -117,5 +130,12 @@ function random(min, max){
 	min = Math.ceil(1);
 	max = Math.floor(100);
 	Dice = Math.floor(Math.random() * (max - min + 1) + min);
-	console.log("dice(6) try !");
+	//console.log("dice(6) try !");
+}
+
+function randomSpammer(min, max){
+	min = Math.ceil(1);
+	max = Math.floor(3);
+	Dice = Math.floor(Math.random() * (max - min + 1) + min);
+	//console.log("dice(6) try !");
 }
