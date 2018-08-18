@@ -116,7 +116,7 @@ clientDiscord.login(process.env.TOKEN);
 			if(randomSpammer == 1){ part01 == part01DB.baba}
 			if(randomSpammer == 2){ part01 == part01DB.obama}
 			if(randomSpammer == 3){ part01 == part01DB.jcvd}
-			message.channel.send(" ```> *** CPL SPAMMER *** ``` " + "```> " + part01 + part02 + part03 + "```");
+			message.channel.send(" ```> *** CPL SPAMMER *** ``` " + "```> " + part01DB.baba + part02 + part03 + "```");
 		}
 	
   });
