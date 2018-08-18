@@ -11,10 +11,10 @@ var part01 = " ";
 var part02 = " ";
 var part03 = " ";
 
-var part01DB = {baba = "Cyril Hanouna" , obama = "Barack Obama" , jcvd = "Jean Claude Van Damme"};
-//part01DB.baba = "Cyril Hanouna";
-//part01DB.obama = "Barack Obama";
-//part01DB.jcvd = "Jean Claude Van Damme";
+var part01DB = {};
+part01DB.baba = "Cyril Hanouna";
+part01DB.obama = "Barack Obama";
+part01DB.jcvd = "Jean Claude Van Damme";
 var part02DB = {};
 var part03DB = {};
 
@@ -115,7 +115,7 @@ clientDiscord.login(process.env.TOKEN);
 			if(randomSpammer == 1){ part01 == part01DB.baba}
 			if(randomSpammer == 2){ part01 == part01DB.obama}
 			if(randomSpammer == 3){ part01 == part01DB.jcvd}
-			message.channel.send(" ```> *** CPL SPAMMER *** ``` " + "```> " + part01 + part02 + part03 + "```")
+			message.channel.send(" ```> *** CPL SPAMMER *** ``` " + "```> " + part01 + part02 + part03 + "```");
 		}
 	
   });
