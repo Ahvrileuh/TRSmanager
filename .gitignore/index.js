@@ -113,7 +113,7 @@ clientDiscord.login(process.env.TOKEN);
 		if(message.content === prefix + run + "cplSpammer" && message.channel.name == 'bot-cmd'){
 			
 			message.channel.send("app **cplSpammer** run ! executor : **" + exeName +"**");
-			randomSpammer();
+			//randomSpammer();
 			if(Dice2 == 1){ part01 == part01DB.baba}
 			else if(Dice2 == 2){ part01 == part01DB.obama}
 			else if(Dice2 == 3){ part01 == part01DB.jcvd}
