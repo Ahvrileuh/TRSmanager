@@ -5,6 +5,7 @@ var prefix = "!";
 var run = "run ";
 var role = "";
 var Dice = 0;
+var Dice2 = 0;
 var exeName = " ";
 
 var part01 = " ";
@@ -113,9 +114,9 @@ clientDiscord.login(process.env.TOKEN);
 			
 			message.channel.send("app **cplSpammer** run ! executor : **" + exeName +"**");
 			randomSpammer();
-			if(Dice == 1){ part01 == part01DB.baba}
-			else if(Dice == 2){ part01 == part01DB.obama}
-			else if(Dice == 3){ part01 == part01DB.jcvd}
+			if(Dice2 == 1){ part01 == part01DB.baba}
+			else if(Dice2 == 2){ part01 == part01DB.obama}
+			else if(Dice2 == 3){ part01 == part01DB.jcvd}
 			message.channel.send(" ```> *** CPL SPAMMER *** ``` " + "```> " + part01 + part02 + part03 + "```");
 		}
 	
@@ -137,6 +138,6 @@ function random(min, max){
 function randomSpammer(min, max){
 	min = Math.ceil(1);
 	max = Math.floor(3);
-	Dice = Math.floor(Math.random() * (max - min + 1) + min);
+	Dice2 = Math.floor(Math.random() * (max - min + 1) + min);
 	//console.log("dice(6) try !");
 }
