@@ -7,7 +7,7 @@ var role = "";
 var Dice = 0;
 var exeName = " ";
 
-var part01 = "test";
+var part01 = " ";
 var part02 = " ";
 var part03 = " ";
 
@@ -110,9 +110,9 @@ clientDiscord.login(process.env.TOKEN);
 			}
 		}
 		if(message.content === prefix + run + "cplSpammer" && message.channel.name == 'bot-cmd'){
-			randomSpammer();
+			
 			message.channel.send("app **cplSpammer** run ! executor : **" + exeName +"**");
-			part01 == part01DB.baba
+			randomSpammer();
 			if(Dice == 1){ part01 == part01DB.baba}
 			else if(Dice == 2){ part01 == part01DB.obama}
 			else if(Dice == 3){ part01 == part01DB.jcvd}
