@@ -113,10 +113,10 @@ clientDiscord.login(process.env.TOKEN);
 			randomSpammer();
 			message.channel.send("app **cplSpammer** run ! executor : **" + exeName +"**");
 			part01 == part01DB.baba
-			if(randomSpammer == 1){ part01 == part01DB.baba}
-			if(randomSpammer == 2){ part01 == part01DB.obama}
-			if(randomSpammer == 3){ part01 == part01DB.jcvd}
-			message.channel.send(" ```> *** CPL SPAMMER *** ``` " + "```> " + part01DB.baba + part02 + part03 + "```");
+			if(Dice == 1){ part01 == part01DB.baba}
+			else if(Dice == 2){ part01 == part01DB.obama}
+			else if(Dice == 3){ part01 == part01DB.jcvd}
+			message.channel.send(" ```> *** CPL SPAMMER *** ``` " + "```> " + part01 + part02 + part03 + "```");
 		}
 	
   });
