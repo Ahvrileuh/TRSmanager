@@ -117,6 +117,7 @@ clientDiscord.login(process.env.TOKEN);
 			if(Dice2 == 1){ part01 == part01DB.baba}
 			else if(Dice2 == 2){ part01 == part01DB.obama}
 			else if(Dice2 == 3){ part01 == part01DB.jcvd}
+			else if(Dice2 == 0){ part01 == "cplSpammer OFF"}
 			message.channel.send(" ```> *** CPL SPAMMER *** ``` " + "```> " + part01 + part02 + part03 + "```");
 		}
 	
